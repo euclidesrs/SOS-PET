@@ -21,32 +21,30 @@ Atualmente, a falta de controle dificulta o acompanhamento dos animais, voluntá
 
 # Proposta
 
-Será desenvolvido um sistema web no formato de **API RESTful** capaz de gerenciar:
+Será desenvolvido um sistema web no formato de API RESTful capaz de gerenciar:
 
-* Animais resgatados
-* Processos de adoção
-* Voluntários
+- Animais resgatados
+- Processos de adoção
+- Voluntários
 
-O sistema permitirá:
+O sistema tambem permitirá:
 
-* Cadastro
-* Consulta
-* Atualização
-* Remoção de dados
-
-Além disso, haverá relacionamento entre animais e adoções, garantindo maior organização e eficiência.
+- Cadastro
+- Consulta
+- Atualização
+- Remoção de dados
 
 ---
 
 
 # Tecnologia
 
-* **Backend:** Node.js + Express
-* **Banco de Dados:** MySQL
-* **ORM:** Sequelize
-* **Testes:** Jest
-* **Ferramentas:** Insomnia
-* **Versionamento:** Git e GitHub
+-Backend:** Node.js + Express
+-Banco de Dados:** MySQL
+-ORM:** Sequelize
+-Testes:** Jest
+-Ferramentas:** Insomnia
+-Versionamento:** Git e GitHub
 
 ---
 
