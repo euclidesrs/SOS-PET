@@ -26,9 +26,6 @@ Será desenvolvido um sistema web no formato de API RESTful capaz de gerenciar:
 - Animais resgatados
 - Processos de adoção
 - Voluntários
-
-# O sistema tambem permitirá
-
 - Cadastro
 - Consulta
 - Atualização
