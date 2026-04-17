@@ -35,20 +35,20 @@ O sistema tambem permitirá:
 - Remoção de dados
 
 MVP:
-Cadastro de Animais
-Criar animal
-Listar animais
-Atualizar dados
-Remover animal
-Cadastro de Voluntários
-Criar voluntário
-Listar voluntários
-Atualizar
-Remover
-Registro de Adoção
-Registrar adoção de um animal
-Relacionamento entre entidades
-Animal
+Cadastro de Animais;
+Criar animal;
+Listar animais;
+Atualizar dados;
+Remover animal;
+Cadastro de Voluntários;
+Criar voluntário;
+Listar voluntários;
+Atualizar;
+Remover;
+Registro de Adoção;
+Registrar adoção de um animal;
+Relacionamento entre entidades;
+Animal;
 Voluntário (ou adotante)
 
 ---
