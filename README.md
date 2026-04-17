@@ -36,12 +36,15 @@ O sistema tambem permitirá:
 
 
 MVP:
--
+
 O sistema permitirá:
 
 Cadastro, consulta, atualização e remoção (CRUD) de animais
+
 Cadastro, consulta, atualização e remoção (CRUD) de voluntários
+
 Registro de adoções, vinculando um animal a um voluntário/adotante
+
 Implementação de relacionamento entre as entidades do sistema
 
 Além disso, serão aplicadas regras básicas de negócio, como a restrição de adoção de animais já adotados, garantindo maior consistência e controle dos dados.
