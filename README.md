@@ -35,6 +35,7 @@ O sistema tambem permitirá:
 - Remoção de dados
 
 ---
+Este projeto consiste no desenvolvimento de uma API backend podendo futuramente ser integrada a um sistema web ou aplicativo mobile.
 
 
 # Tecnologia
@@ -49,7 +50,7 @@ O sistema tambem permitirá:
 ---
 
 
-# Cronograma
+Cronograma
 
 | Data  | Tipo      | Atividades                                                    |
 | ----- | --------- | ------------------------------------------------------------- |
@@ -67,6 +68,6 @@ O sistema tambem permitirá:
 
 ---
 
-##  Observação
 
-Este projeto consiste no desenvolvimento de uma **API backend**, podendo futuramente ser integrada a um sistema web ou aplicativo mobile.
+
+
