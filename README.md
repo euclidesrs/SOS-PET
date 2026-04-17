@@ -27,7 +27,7 @@ Será desenvolvido um sistema web no formato de API RESTful capaz de gerenciar:
 - Processos de adoção
 - Voluntários
 
-O sistema tambem permitirá:
+# O sistema tambem permitirá
 
 - Cadastro
 - Consulta
@@ -35,9 +35,7 @@ O sistema tambem permitirá:
 - Remoção de dados
 
 
-MVP:
-
-O sistema permitirá:
+# MVP:
 
 Cadastro, consulta, atualização e remoção (CRUD) de animais
 
