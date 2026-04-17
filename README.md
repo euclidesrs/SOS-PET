@@ -9,7 +9,7 @@
 
 ---
 
-##  Definição do Problema
+# Definição do Problema
 
 As enchentes em Porto Alegre deixaram inúmeros animais desabrigados.
 
@@ -19,7 +19,7 @@ Atualmente, a falta de controle dificulta o acompanhamento dos animais, voluntá
 
 ---
 
-## Proposta de Solução
+# Proposta de Solução
 
 Será desenvolvido um sistema web no formato de **API RESTful** capaz de gerenciar:
 
@@ -38,7 +38,7 @@ Além disso, haverá relacionamento entre animais e adoções, garantindo maior 
 
 ---
 
-## Tecnologias (Stack)
+# Tecnologias (Stack)
 
 * **Backend:** Node.js + Express
 * **Banco de Dados:** MySQL
@@ -49,7 +49,7 @@ Além disso, haverá relacionamento entre animais e adoções, garantindo maior 
 
 ---
 
-## Cronograma
+# Cronograma
 
 | Data  | Tipo      | Atividades                                                    |
 | ----- | --------- | ------------------------------------------------------------- |
