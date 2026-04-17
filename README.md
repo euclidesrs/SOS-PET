@@ -11,7 +11,7 @@
 
 # Problema
 
-As enchentes em Porto Alegre deixaram inúmeros animais desabrigados.
+As enchentes em Porto Alegre deixaram inúmeros animais desabrigados em 2024.
 
 Para ajudar nessa situação, há a necessidade de um sistema que organize e gerencie o processo de resgate, abrigo e adoção desses animais.
 
@@ -38,7 +38,8 @@ Além disso, haverá relacionamento entre animais e adoções, garantindo maior 
 
 ---
 
-# Tecnologias
+
+# Tecnologia
 
 * **Backend:** Node.js + Express
 * **Banco de Dados:** MySQL
@@ -48,6 +49,7 @@ Além disso, haverá relacionamento entre animais e adoções, garantindo maior 
 * **Versionamento:** Git e GitHub
 
 ---
+
 
 # Cronograma
 
