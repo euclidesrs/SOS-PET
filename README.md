@@ -34,11 +34,17 @@ O sistema tambem permitirá:
 - Atualização
 - Remoção de dados
 
+
 MVP:
-• Cadastro de animais
-• Cadastro de voluntários
-• Registro de adoções
-• Relacionamento entre entidades
+-
+O sistema permitirá:
+
+Cadastro, consulta, atualização e remoção (CRUD) de animais
+Cadastro, consulta, atualização e remoção (CRUD) de voluntários
+Registro de adoções, vinculando um animal a um voluntário/adotante
+Implementação de relacionamento entre as entidades do sistema
+
+Além disso, serão aplicadas regras básicas de negócio, como a restrição de adoção de animais já adotados, garantindo maior consistência e controle dos dados.
 
 ---
 Este projeto consiste no desenvolvimento de uma API backend podendo futuramente ser integrada a um sistema web ou aplicativo mobile.
