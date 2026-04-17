@@ -1,1 +1,79 @@
 # SOS-PET
+ Sistema de Resgate, Abrigo e Adoção de Animais
+
+---
+
+##  Participantes do Projeto
+
+* Euclides Silveira
+
+---
+
+##  Definição do Problema
+
+As enchentes em Porto Alegre deixaram inúmeros animais desabrigados.
+
+Para ajudar nessa situação, há a necessidade de um sistema que organize e gerencie o processo de resgate, abrigo e adoção desses animais.
+
+Atualmente, a falta de controle dificulta o acompanhamento dos animais, voluntários e adoções, impactando diretamente na eficiência do cuidado e na tomada de decisões.
+
+---
+
+##  Proposta de Solução
+
+Será desenvolvido um sistema web no formato de **API RESTful** capaz de gerenciar:
+
+* Animais resgatados
+* Processos de adoção
+* Voluntários
+
+O sistema permitirá:
+
+* Cadastro
+* Consulta
+* Atualização
+* Remoção de dados
+
+Além disso, haverá relacionamento entre animais e adoções, garantindo maior organização e eficiência.
+
+###  MVP
+
+* Cadastro de animais
+* Cadastro de voluntários
+* Registro de adoções
+* Relacionamento entre entidades
+
+---
+
+##  Tecnologias (Stack)
+
+* **Backend:** Node.js + Express
+* **Banco de Dados:** MySQL
+* **ORM:** Sequelize
+* **Testes:** Jest
+* **Ferramentas:** Insomnia
+* **Versionamento:** Git e GitHub
+
+---
+
+##  Cronograma
+
+| Data  | Tipo      | Atividades                                                    |
+| ----- | --------- | ------------------------------------------------------------- |
+| 24/04 | Mentoria  | Definição do projeto, criação do GitHub, configuração inicial |
+| 08/05 | Mentoria  | Modelagem do banco (DER), criação das entidades               |
+| 15/05 | Seminário | CRUD de animais, testes com Insomnia                          |
+| 22/05 | Seminário | CRUD de voluntários, rotas                                    |
+| 29/05 | Mentoria  | Adoções (relacionamentos), regras de negócio                  |
+| 12/06 | Mentoria  | Tratamento de erros, refatoração                              |
+| 19/06 | Mentoria  | Testes com Jest                                               |
+| 26/06 | Entrega 3 | Sistema completo, README final                                |
+| 03/07 | Final     | Revisão e preparação                                          |
+| 10/07 | Final     | Apresentação                                                  |
+| 17/07 | Final     | Apresentação                                                  |
+
+---
+
+##  Observação
+
+Este projeto consiste no desenvolvimento de uma **API backend**, podendo futuramente ser integrada a um sistema web ou aplicativo mobile.
