@@ -21,7 +21,7 @@ Além disso, a ausência de um sistema centralizado dificulta o acompanhamento d
 
 O projeto SOS-PET busca solucionar esse problema por meio de um sistema web integrado, permitindo que todas essas informações sejam armazenadas em um banco de dados único e acessadas por meio de uma interface intuitiva.
 
- # Benchmarking
+ ## Benchmarking
 
 Antes do desenvolvimento do SOS-PET, foi realizada uma análise de algumas plataformas voltadas para adoção e proteção animal. O objetivo foi identificar funcionalidades existentes e definir quais recursos seriam implementados no projeto.
 
