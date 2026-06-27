@@ -9,11 +9,11 @@ Autor: Euclides Silveira
 
 -----
 
-## Resumo do Projeto
+# Resumo do Projeto
 
 O SOS-PET é um sistema web desenvolvido para auxiliar instituições, ONGs e voluntários no gerenciamento de animais resgatados, oferecendo uma plataforma centralizada para cadastro, acompanhamento e adoção dos animais. Atualmente, muitas organizações utilizam planilhas ou registros manuais, tornando o controle das informações mais demorado e sujeito a erros. O sistema proposto reúne em um único ambiente o gerenciamento de animais, voluntários, abrigos e processos de adoção, proporcionando maior organização, agilidade e segurança no tratamento das informações. Como resultado, espera-se facilitar a administração das atividades relacionadas ao resgate e adoção de animais, contribuindo para um atendimento mais eficiente.
 
-## Definição do Problema
+# Definição do Problema
 
 Diversas organizações de proteção animal enfrentam dificuldades no gerenciamento das informações relacionadas aos animais resgatados, voluntários e adoções. Em muitos casos, os dados são armazenados em planilhas, documentos físicos ou aplicativos não integrados, dificultando consultas, atualizações e geração de relatórios.
 
@@ -21,7 +21,7 @@ Além disso, a ausência de um sistema centralizado dificulta o acompanhamento d
 
 O projeto SOS-PET busca solucionar esse problema por meio de um sistema web integrado, permitindo que todas essas informações sejam armazenadas em um banco de dados único e acessadas por meio de uma interface intuitiva.
 
-### Benchmarking
+# Benchmarking
 
 Antes do desenvolvimento do SOS-PET, foi realizada uma análise de algumas plataformas voltadas para adoção e proteção animal. O objetivo foi identificar funcionalidades existentes e definir quais recursos seriam implementados no projeto.
 
@@ -36,7 +36,7 @@ Antes do desenvolvimento do SOS-PET, foi realizada uma análise de algumas plata
 | Pesquisa de Animais | ✔ | ✔ | ✔ | ✔ |
 | Interface Responsiva | ✔ | ✔ | ✔ | ✔ |
 
-### Análise
+# Análise
 
 A comparação demonstra que os sistemas pesquisados possuem funcionalidades voltadas principalmente para divulgação e adoção de animais. O SOS-PET diferencia-se por reunir, em uma única plataforma, recursos de gerenciamento administrativo, cadastro de voluntários, controle de abrigos, relatórios e painel de indicadores, oferecendo maior suporte à gestão de instituições responsáveis pelo resgate e adoção de animais.
 
