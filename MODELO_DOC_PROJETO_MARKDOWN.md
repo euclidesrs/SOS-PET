@@ -1,206 +1,156 @@
-# Documentação do Projeto 
+# Documentação do Projeto
 
-## Nome do Autor
+## SOS-PET
+### Sistema Web para Resgate, Abrigo e Adoção de Animais
 
-Euclides Roberto da Silveira
 
----
+
+Autor: Euclides Silveira
+
+-----
 
 ## Resumo do Projeto
 
-Este projeto tem como objetivo desenvolver uma API REST para gerenciamento de um petshop, permitindo o cadastro de animais, serviços e o agendamento de atendimentos.
-
-O problema abordado está na dificuldade de organizar e controlar serviços de forma eficiente, especialmente quando realizado manualmente.
-
-A solução proposta consiste em um sistema backend que centraliza essas informações, facilitando o gerenciamento e reduzindo erros operacionais.
-
-Com isso, espera-se melhorar a organização do petshop e otimizar o controle dos serviços prestados.
-
----
+O SOS-PET é um sistema web desenvolvido para auxiliar instituições, ONGs e voluntários no gerenciamento de animais resgatados, oferecendo uma plataforma centralizada para cadastro, acompanhamento e adoção dos animais. Atualmente, muitas organizações utilizam planilhas ou registros manuais, tornando o controle das informações mais demorado e sujeito a erros. O sistema proposto reúne em um único ambiente o gerenciamento de animais, voluntários, abrigos e processos de adoção, proporcionando maior organização, agilidade e segurança no tratamento das informações. Como resultado, espera-se facilitar a administração das atividades relacionadas ao resgate e adoção de animais, contribuindo para um atendimento mais eficiente.
 
 ## Definição do Problema
 
-Atualmente, muitos petshops utilizam métodos manuais ou sistemas pouco eficientes para gerenciar seus serviços, o que pode gerar perda de dados, desorganização e dificuldades operacionais no dia a dia.
+Diversas organizações de proteção animal enfrentam dificuldades no gerenciamento das informações relacionadas aos animais resgatados, voluntários e adoções. Em muitos casos, os dados são armazenados em planilhas, documentos físicos ou aplicativos não integrados, dificultando consultas, atualizações e geração de relatórios.
 
-Grande parte dos estabelecimentos de menor porte ainda opera sem sistemas informatizados adequados, o que impacta diretamente na experiência do cliente, que espera um atendimento personalizado e eficiente.
+Além disso, a ausência de um sistema centralizado dificulta o acompanhamento do histórico dos animais, do processo de adoção e da disponibilidade de vagas nos abrigos. Esse cenário pode ocasionar perda de informações, retrabalho e atrasos nas atividades administrativas.
 
-Além disso, não há uma integração clara entre animais, serviços realizados e agendamentos, dificultando o controle das operações e a rastreabilidade dos atendimentos prestados.
+O projeto SOS-PET busca solucionar esse problema por meio de um sistema web integrado, permitindo que todas essas informações sejam armazenadas em um banco de dados único e acessadas por meio de uma interface intuitiva.
 
-Dessa forma, surge a necessidade de uma solução tecnológica que centralize essas informações e permita um gerenciamento mais eficiente.
+### Benchmarking
 
----
+Antes do desenvolvimento do SOS-PET, foi realizada uma análise de algumas plataformas voltadas para adoção e proteção animal. O objetivo foi identificar funcionalidades existentes e definir quais recursos seriam implementados no projeto.
+
+| Funcionalidade | SOS-PET | Adopet | Petlove Adote | Adote um Gatinho |
+|---|---|---|---|---|
+| Cadastro de Animais | ✔ | ✔ | ✔ | ✔ |
+| Cadastro de Voluntários | ✔ | ✖ | ✖ | ✖ |
+| Cadastro de Abrigos | ✔ | ✔ | ✔ | ✔ |
+| Controle de Adoções | ✔ | ✔ | ✔ | ✔ |
+| Dashboard Administrativo | ✔ | ✖ | ✖ | ✖ |
+| Relatórios | ✔ | ✖ | ✖ | ✖ |
+| Pesquisa de Animais | ✔ | ✔ | ✔ | ✔ |
+| Interface Responsiva | ✔ | ✔ | ✔ | ✔ |
+
+### Análise
+
+A comparação demonstra que os sistemas pesquisados possuem funcionalidades voltadas principalmente para divulgação e adoção de animais. O SOS-PET diferencia-se por reunir, em uma única plataforma, recursos de gerenciamento administrativo, cadastro de voluntários, controle de abrigos, relatórios e painel de indicadores, oferecendo maior suporte à gestão de instituições responsáveis pelo resgate e adoção de animais.
 
 ## Objetivos
 
 ### Objetivo Geral
 
-Desenvolver uma API REST para gerenciamento de um petshop.
+Desenvolver um sistema web para gerenciamento de animais resgatados, voluntários, abrigos e processos de adoção, proporcionando maior organização, controle e eficiência às instituições responsáveis pelo cuidado dos animais.
 
 ### Objetivos Específicos
 
-- Cadastrar animais
-- Cadastrar serviços
-- Permitir agendamento de serviços
-- Implementar tratamento de erros
-- Criar testes automatizados com Jest
-- Garantir organização e consistência dos dados
+* Cadastrar animais resgatados.
+* Gerenciar informações dos voluntários.
+* Controlar os abrigos cadastrados.
+* Registrar processos de adoção.
+* Disponibilizar consultas e filtros de pesquisa.
+* Gerar relatórios para apoio à gestão.
 
----
+## Stack Tecnológico
 
+O desenvolvimento do SOS-PET utilizará tecnologias amplamente empregadas no desenvolvimento de aplicações web, priorizando desempenho, organização do código e facilidade de manutenção.
 
-## Pilha Tecnológica
+O Vue.js será utilizado no desenvolvimento da interface do sistema (frontend), proporcionando uma experiência responsiva e intuitiva ao usuário.
 
-- Node.js
-- Express.js
-- PostgreSQL
-- Jest
-- Insomnia
-- Git
-- GitHub
+O Node.js, juntamente com o framework Express.js, será responsável pelo desenvolvimento da API REST, permitindo a comunicação entre a interface do sistema e o banco de dados.
 
-## Motivo das Escolhas Tecnológicas
+O banco de dados utilizado será o MySQL, escolhido por sua confiabilidade, facilidade de administração e ampla utilização em aplicações web.
 
-O desenvolvimento da aplicação foi realizado utilizando Node.js como ambiente de execução JavaScript no lado servidor. A escolha dessa tecnologia ocorreu devido ao seu modelo assíncrono e orientado a eventos, proporcionando bom desempenho e escalabilidade para aplicações web modernas (NODE.JS FOUNDATION, 2026).
+Para facilitar o mapeamento entre as tabelas do banco de dados e os objetos da aplicação será utilizado o Sequelize, que oferece recursos para criação de modelos, relacionamentos e migrações.
 
-O framework Express.js foi utilizado para estruturar a API REST devido à sua simplicidade, flexibilidade e ampla adoção no desenvolvimento backend com JavaScript, permitindo implementação eficiente de rotas, middlewares e tratamento centralizado de erros (EXPRESS, 2026).
+Durante os testes da API será utilizado o Insomnia, permitindo validar todas as rotas desenvolvidas. Os testes automatizados serão implementados utilizando Jest, garantindo o funcionamento das principais funcionalidades do sistema.
 
-Para persistência dos dados foi adotado o PostgreSQL, sistema gerenciador de banco de dados relacional reconhecido pela robustez, confiabilidade transacional e conformidade com padrões SQL (POSTGRESQL, 2026).
+O versionamento do projeto será realizado utilizando Git e GitHub, possibilitando o controle das alterações realizadas durante o desenvolvimento.
 
-A validação automatizada da aplicação será realizada utilizando Jest, framework amplamente empregado no ecossistema JavaScript por sua praticidade e suporte nativo a testes assíncronos (JEST, 2026).
-
-O versionamento será realizado com Git e o armazenamento remoto no GitHub, possibilitando rastreabilidade, controle de versões e organização do desenvolvimento (CHACON; STRAUB, 2014).
-
-As requisições e testes manuais da API serão executados por meio do Insomnia, ferramenta voltada à validação e depuração de APIs REST (INSOMNIA, 2026).
-
-
----
+O ambiente de desenvolvimento utilizado será o Visual Studio Code, devido à sua integração com as tecnologias adotadas e ao amplo suporte por meio de extensões.
 
 ## Descrição da Solução
 
-A solução consiste em uma API REST desenvolvida com Node.js e Express, com persistência de dados em banco PostgreSQL.
+O SOS-PET será desenvolvido como uma aplicação web composta por um frontend, uma API REST e um banco de dados relacional.
 
-O sistema foi projetado seguindo os princípios RESTful, utilizando os verbos HTTP de forma semântica:
+Após realizar o login, o administrador terá acesso a um painel inicial contendo informações gerais do sistema, como quantidade de animais cadastrados, adoções realizadas, voluntários ativos e abrigos registrados.
 
-- GET para consulta
-- POST para criação
-- PUT para atualização
-- DELETE para remoção
+O sistema permitirá cadastrar, consultar, editar e excluir animais resgatados, armazenando informações como nome, espécie, raça, idade, porte, situação, descrição e fotografia.
 
-As respostas são retornadas no formato JSON.
+Também será possível cadastrar voluntários responsáveis pelo atendimento aos animais, além de registrar os abrigos parceiros e sua capacidade de atendimento.
 
-O sistema é composto por três entidades principais: Animais, Serviços e Agendamentos.
+Quando um animal for adotado, o sistema registrará automaticamente a adoção, alterando seu status para "Adotado", impedindo novas adoções para o mesmo animal.
 
-A entidade Animal armazena dados do pet, como nome, espécie e raça, além das informações do tutor, incluindo nome e contato.
-
-A entidade Serviço registra os tipos de atendimento oferecidos pelo petshop, como banho e tosa, consulta veterinária e hospedagem.
-
-A entidade Agendamento relaciona um animal a um serviço, registrando data, horário e status do atendimento, podendo estar como pendente, concluído ou cancelado.
-
-A aplicação conta com tratamento centralizado de erros, retornando códigos HTTP adequados em cada situação:
-
-- 400 para requisições inválidas
-- 404 para recursos não encontrados
-- 500 para erros internos do servidor
-
-Cada endpoint realiza validação dos dados de entrada antes de qualquer operação no banco de dados.
-
-A segurança básica é garantida pela validação em nível de aplicação e pelas constraints do banco PostgreSQL.
-
-Como perspectiva futura, está prevista a implementação de autenticação via JWT (JSON Web Token) para controle de acesso.
-
----
+Além das operações de cadastro, o sistema contará com recursos de pesquisa, filtros e relatórios simples, facilitando o gerenciamento das informações e apoiando a tomada de decisão pelos responsáveis pela instituição.
 
 ## Arquitetura
 
-A aplicação segue o padrão de arquitetura REST, organizada em camadas:
+O projeto seguirá uma arquitetura em camadas, separando a aplicação em Frontend, Backend e Banco de Dados.
 
-### Rotas
-Responsáveis por receber as requisições HTTP.
+O frontend será desenvolvido utilizando Vue.js, responsável pela interface apresentada ao usuário.
 
-### Controllers
-Tratam a lógica da aplicação.
+O backend será desenvolvido em Node.js com Express.js, implementando uma API REST responsável pelas regras de negócio e comunicação com o banco de dados.
 
-### Models
-Representam as entidades e regras de persistência.
+O banco de dados MySQL armazenará todas as informações do sistema de forma estruturada e segura.
 
-### Banco de Dados
-Responsável pelo armazenamento das informações.
+Durante o desenvolvimento do projeto foram elaborados os seguintes artefatos para auxiliar na análise, planejamento e implementação da solução: Benchmarking (tabela comparativa), Persona, Casos de Uso, Diagrama Entidade-Relacionamento (DER) e Wireframes. Esses artefatos permitiram definir os requisitos do sistema, modelar o banco de dados, compreender o perfil dos usuários e projetar a interface da aplicação.
 
-A comunicação ocorre via protocolo HTTP utilizando operações CRUD.
-
----
+> **Repositório do projeto:** _[inserir link do GitHub aqui]_
 
 ## Validação
 
-Serão realizados testes automatizados utilizando Jest para validar o funcionamento da API.
+A validação do sistema será realizada por meio de testes funcionais das principais funcionalidades, verificando se os requisitos definidos para o projeto foram atendidos. Serão realizados testes de cadastro, consulta, atualização e exclusão de registros, além da validação do fluxo completo de adoção de um animal. Também será verificada a integração entre o frontend, a API REST e o banco de dados, garantindo que as informações sejam armazenadas e recuperadas corretamente.
 
-Os testes incluem cenários de sucesso e erro, garantindo maior confiabilidade da aplicação.
+### Estratégia
 
-Até o momento, não foram realizadas sessões formais de testes de aceitação com usuários finais.
-
-Entretanto, futuramente serão conduzidas avaliações práticas nas quais os usuários serão orientados a executar tarefas específicas, como:
-
-- Cadastrar um animal
-- Agendar um serviço
-- Consultar histórico de atendimentos
-
-O objetivo será avaliar clareza das respostas, consistência das operações e facilidade de integração com interfaces consumidoras da API.
-
----
+O desenvolvimento será realizado de forma incremental, implementando cada módulo separadamente e realizando testes após sua conclusão. Inicialmente serão desenvolvidas as funcionalidades de autenticação, cadastro de animais, voluntários e abrigos. Em seguida será implementado o módulo de adoção e, por fim, os recursos de pesquisa, filtros e relatórios. Essa estratégia permitirá identificar possíveis problemas durante o desenvolvimento e facilitará a evolução do sistema.
 
 ## Consolidação dos Dados Coletados
 
-A API permite:
+Ao término do desenvolvimento, serão apresentados os resultados obtidos por meio dos testes realizados. Será verificado se todos os requisitos funcionais foram implementados corretamente, bem como o desempenho das operações principais do sistema. Os resultados obtidos servirão para comprovar o funcionamento da solução proposta e identificar possíveis melhorias futuras.
 
-- Listar animais cadastrados
-- Consultar serviços disponíveis
-- Visualizar agendamentos realizados
-- Monitorar status dos atendimentos
+## Conclusões
 
-Essas funcionalidades contribuem para maior organização e controle das operações internas do petshop.
+O desenvolvimento do SOS-PET busca oferecer uma solução tecnológica para auxiliar instituições e voluntários no gerenciamento de animais resgatados e processos de adoção. A informatização desses processos permitirá maior organização das informações, redução de erros, facilidade de consulta e melhoria na administração das atividades relacionadas ao cuidado dos animais.
 
----
-
-## Conclusão
-
-Este projeto teve como objetivo resolver um problema real enfrentado por petshops de pequeno e médio porte: a ausência de um sistema centralizado e eficiente para gerenciar animais, serviços e agendamentos.
-
-A API REST desenvolvida com Node.js, Express e PostgreSQL atende a esse objetivo ao oferecer endpoints funcionais, tratamento adequado de erros e cobertura por testes automatizados.
-
-O projeto demonstra a aplicação prática de conceitos fundamentais de desenvolvimento de software, como arquitetura REST, separação de responsabilidades em camadas, qualidade de código por meio de testes e versionamento utilizando Git.
-
-A solução desenvolvida é funcional, documentada e representa uma base escalável para futuras evoluções, como autenticação de usuários e desenvolvimento de interface gráfica.
-
----
+Além de atender aos objetivos propostos, o projeto proporcionará experiência prática no desenvolvimento de aplicações web utilizando tecnologias atuais, integrando frontend, backend e banco de dados em uma única solução.
 
 ## Limitações do Projeto e Perspectivas Futuras
 
-Atualmente, o sistema apresenta algumas limitações:
+Nesta versão do sistema serão implementadas apenas as funcionalidades essenciais para o gerenciamento de animais, voluntários, abrigos e adoções.
 
-- Não possui interface gráfica
-- Não possui autenticação de usuários
-- Não possui notificações automáticas
-- Não possui painel administrativo visual
+Como trabalhos futuros, poderão ser adicionadas funcionalidades como:
 
-Como melhorias futuras, pretende-se implementar:
-
-- Frontend web
-- Autenticação JWT
-- Controle de permissões
-- Dashboard administrativo
-- Histórico detalhado de atendimentos
-
----
+* Aplicativo para dispositivos móveis;
+* Cadastro de adotantes com histórico completo;
+* Notificações por e-mail;
+* Integração com serviços de mapas para localização de abrigos;
+* Painel administrativo mais completo com gráficos e indicadores;
+* Controle de campanhas de arrecadação e eventos.
 
 ## Referências Bibliográficas
 
-ABINPET. Mercado Pet Brasil 2023. São Paulo: Associação Brasileira da Indústria de Produtos para Animais de Estimação, 2023. Disponível em: http://abinpet.org.br. Acesso em: mai. 2026.
-CHACON, Scott; STRAUB, Ben. Pro Git. 2. ed. Nova York: Apress, 2014. Disponível em: https://git-scm.com/book/en/v2. Acesso em: mai. 2026.
-EXPRESS. Express.js Documentation. Disponível em: https://expressjs.com. Acesso em: mai. 2026.
-ISO/IEC 25010:2011. Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE). Geneva: ISO, 2011.
-JEST. Jest Documentation. Disponível em: https://jestjs.io. Acesso em: mai. 2026.
-NODE.JS FOUNDATION. Node.js Documentation. Disponível em: https://nodejs.org/en/docs. Acesso em: mai. 2026.
-POSTGRESQL. PostgreSQL Documentation. Disponível em: https://www.postgresql.org/docs. Acesso em: mai. 2026.
-SOMMERVILLE, Ian. Engenharia de Software. 9. ed. São Paulo: Pearson, 2011.
-INSOMNIA. Insomnia REST Client Documentation. Disponível em: https://docs.insomnia.rest. Acesso em: mai. 2026.
-Materiais acadêmicos da disciplina Projeto de Desenvolvimento II.
+ADOPET. **Plataforma de adoção responsável de animais**. Disponível em: https://adopet.com.br/. Acesso em: 26 jun. 2026.
+
+ADOTE UM GATINHO. **Organização de proteção animal**. Disponível em: https://www.adoteumgatinho.org.br/. Acesso em: 26 jun. 2026.
+
+EXPRESS.JS. **Documentação Oficial**. Disponível em: https://expressjs.com/. Acesso em: 26 jun. 2026.
+
+GITHUB. **Documentação Oficial**. Disponível em: https://github.com/. Acesso em: 26 jun. 2026.
+
+JEST. **Documentação Oficial**. Disponível em: https://jestjs.io/. Acesso em: 26 jun. 2026.
+
+MYSQL. **Documentação Oficial**. Disponível em: https://dev.mysql.com/doc/. Acesso em: 26 jun. 2026.
+
+NODE.JS. **Documentação Oficial**. Disponível em: https://nodejs.org/. Acesso em: 26 jun. 2026.
+
+PETLOVE ADOTE. **Plataforma de adoção de animais**. Disponível em: https://adote.petlove.com.br/. Acesso em: 26 jun. 2026.
+
+SEQUELIZE. **Documentação Oficial**. Disponível em: https://sequelize.org/. Acesso em: 26 jun. 2026.
+
+VUE.JS. **Documentação Oficial**. Disponível em: https://vuejs.org/. Acesso em: 26 jun. 2026.
+
